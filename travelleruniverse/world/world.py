@@ -1,7 +1,7 @@
 '''
 Created on May 30, 2017
 
-@author: shold
+@author: Sam Holden <sholden@holden.id.au>
 '''
 
 class World(object):

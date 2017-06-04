@@ -4,7 +4,7 @@ Created on May 30, 2017
 @author: shold
 '''
 import unittest
-from travelleruniverse import world
+from travelleruniverse.world import world
 
 
 class Test(unittest.TestCase):
