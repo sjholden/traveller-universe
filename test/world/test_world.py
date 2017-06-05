@@ -20,6 +20,10 @@ class Test(unittest.TestCase):
         self.assertEqual(w.govt, 6)
         self.assertEqual(w.law, 7)
         self.assertEqual(w.tech, 8)
+        self.assertEqual(w.extra, {})
+        w = world.World(1,2,3,4,5,6,7,8, {'extra':2})
+        self.assertEqual(w.extra, {'extra':2})
+        
 
 
 if __name__ == "__main__":
