@@ -10,7 +10,7 @@ class World(object):
     '''
 
 
-    def __init__(self, port, size, atmo, hydro, pop, govt, law, tech, extra=None):
+    def __init__(self, port, size, atmo, hydro, pop, govt, law, tech, bases=None, extra=None):
         '''
         Constructor
         '''
@@ -22,6 +22,10 @@ class World(object):
         self._govt = govt
         self._law = law
         self._tech = tech
+        if bases:
+            self._bases = bases
+        else:
+            self._bases = []
         if extra:
             self._extra = extra
         else:
@@ -43,6 +47,8 @@ class World(object):
     def law(self): return self._law
     @property
     def tech(self): return self._tech
+    @property
+    def bases(self): return self._bases
     @property
     def extra(self): return self._extra
     

@@ -19,7 +19,7 @@ class Test(unittest.TestCase):
             result = utils.rollDice(3,5)
             self.assertGreaterEqual(result, 8) and self.assertLessEqual(result, 23)
         for _ in range(10):
-            result= utils.rollDice(3, 5, min=14, max=16)
+            result= utils.rollDice(3, 5, min_=14, max_=16)
             self.assertGreaterEqual(result, 14) and self.assertLessEqual(result, 16)
             
             
